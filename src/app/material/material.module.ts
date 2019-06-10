@@ -6,7 +6,9 @@ import {
   MatButtonModule,
   MatButtonToggleModule,
   MatSortModule,
-  MatTableModule
+  MatTableModule,
+  MatProgressSpinnerModule,
+  MatRadioModule
 } from '@angular/material';
 
 
@@ -18,14 +20,18 @@ import {
     MatButtonModule,
     MatButtonToggleModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    MatProgressSpinnerModule,
+    MatRadioModule
   ],
   exports: [
     CdkTableModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    MatProgressSpinnerModule,
+    MatRadioModule
   ],
   declarations: []
 })

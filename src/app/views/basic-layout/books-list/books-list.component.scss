@@ -1,0 +1,10 @@
+.books-list {
+  min-height: 75vh;
+  position: relative;
+  margin-bottom: 5rem;
+
+  &-holder {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

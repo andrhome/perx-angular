@@ -2,25 +2,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { BasicLayoutModule } from './views/basic-layout/basic-layout.module';
 import { SharedComponentsModule } from './components/shared-components.module';
 
-//Components
+// Services
+import { DataService } from './services/data.service';
+
+// Components
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
-import { BasicLayoutComponent } from './views/basic-layout/basic-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
-    BasicLayoutComponent
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    BasicLayoutModule,
     SharedComponentsModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

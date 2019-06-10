@@ -33,11 +33,6 @@ body {
   }
 }
 
-button,
-.mat-table {
-  font-family: $base-font;
-}
-
 a {
   color: $text-color;
   letter-spacing: .8px;
@@ -73,10 +68,6 @@ img {
   max-height: 100%;
 }
 
-h1 {
-  font-size: 4.8rem;
-}
-
-h2 {
-  font-size: 3.2rem;
+h3 {
+  font-size: 2.6rem;
 }
