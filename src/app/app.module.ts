@@ -1,16 +1,24 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material/material.module';
+
+//Components
 import { AppComponent } from './app.component';
+import { LandingPageComponent } from './views/landing-page/landing-page.component';
+import { BasicLayoutComponent } from './views/basic-layout/basic-layout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingPageComponent,
+    BasicLayoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
