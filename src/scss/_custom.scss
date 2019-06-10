@@ -1,3 +1,6 @@
 @import 'variables';
 @import 'mixin';
 
+.flex-center-row {
+  @include flex-row(center, center);
+}
