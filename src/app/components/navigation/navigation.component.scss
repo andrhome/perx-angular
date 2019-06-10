@@ -1,16 +1,28 @@
 @import "../../../scss/variables";
+@import "../../../scss/mixin";
 
 .navigation {
   border-bottom: 1px solid $border-light;
 
   &-holder {
     padding: 3% 20px;
+    @include media-max-screen($mobile) {
+      flex-direction: column;
+    }
   }
 
   a {
     min-width: 13.5rem;
     padding: .4rem 2rem;
     margin: 0 1.5rem;
+    @include media-max-screen($mobile) {
+      max-width: 280px;
+      width: 100%;
+      &:not(last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
     &:hover {
       box-shadow: 0 0 6px 1px $text-color;
     }
