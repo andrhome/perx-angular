@@ -7,9 +7,17 @@ import { MaterialModule } from '../material/material.module';
 // Components
 import { NavigationComponent } from './navigation/navigation.component';
 
+// Directives
+import { StrongDirective } from '../directives/strong/strong.directive';
+import { UppercaseDirective } from '../directives/uppercase/uppercase.directive';
+import { WarningDirective } from '../directives/warning/warning.directive';
+
 @NgModule({
   declarations: [
-    NavigationComponent
+    NavigationComponent,
+    StrongDirective,
+    UppercaseDirective,
+    WarningDirective
   ],
   imports: [
     RouterModule,
@@ -18,7 +26,10 @@ import { NavigationComponent } from './navigation/navigation.component';
   ],
   exports: [
     MaterialModule,
-    NavigationComponent
+    NavigationComponent,
+    StrongDirective,
+    UppercaseDirective,
+    WarningDirective
   ],
   providers: [],
   entryComponents: []

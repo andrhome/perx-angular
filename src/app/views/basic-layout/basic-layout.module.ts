@@ -9,12 +9,14 @@ import { SharedComponentsModule } from '../../components/shared-components.modul
 import { BooksFilterComponent } from './books-list/books-filter/books-filter.component';
 import { BooksListComponent } from './books-list/books-list.component';
 import { BasicLayoutComponent } from './basic-layout.component';
+import { InfoBlockComponent } from './info-block/info-block.component';
 
 @NgModule({
   declarations: [
     BasicLayoutComponent,
     BooksListComponent,
-    BooksFilterComponent
+    BooksFilterComponent,
+    InfoBlockComponent
   ],
   imports: [
     CommonModule,

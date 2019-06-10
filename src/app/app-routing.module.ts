@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
 import { BasicLayoutComponent } from './views/basic-layout/basic-layout.component';
 import { BooksListComponent } from './views/basic-layout/books-list/books-list.component';
+import { InfoBlockComponent } from './views/basic-layout/info-block/info-block.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'books',
         component: BooksListComponent
+      },
+      {
+        path: 'info',
+        component: InfoBlockComponent
       }
     ]
   },
